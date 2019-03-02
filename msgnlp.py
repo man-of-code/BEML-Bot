@@ -13,4 +13,4 @@ def process(message):
 	for word in keywords:
 		for key in vendor_list:
 			if key == word:
-				return vendor_list[0]
+				return key
