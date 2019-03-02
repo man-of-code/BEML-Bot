@@ -33,7 +33,10 @@ def receive_message():
                     send_message(recipient_id, response_sent_text)
                 #if user sends us a GIF, photo,video, or any other non-text item
                 if message['message'].get('attachments'):
-                    response_sent_nontext = process(message['message'].get('text'))
+                	response_sent_nontext = "Invalid input"
+                	obj = message['message'].get('attachments')
+                	if obj.get('type') == 'text':
+                		response_sent_nontext = process(obj.get('payload'))
                     send_message(recipient_id, response_sent_nontext)
     return "Message Processed"
 
