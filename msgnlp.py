@@ -8,7 +8,7 @@ vendor_list = {
 }
 
 def process(message):
-	keywords = nltk.tokenize(message)
+	keywords = word_tokenize(message)
 	print(keywords)
 	for word in keywords:
 		for key in vendor_list:
