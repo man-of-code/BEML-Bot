@@ -1,2 +1,2 @@
-web: python3 punkt-install.py
+web: gunicorn main:punkt_install --log-file=-
 web: gunicorn main:bot.app --log-file=-
