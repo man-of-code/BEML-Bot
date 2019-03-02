@@ -1,5 +1,4 @@
-import bot, nltk
-nltk.download('punkt') 
+import bot
 
 if __name__ == "__main__":
     bot.app.run()
