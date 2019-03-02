@@ -3,9 +3,8 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 
 #1
 vendor_list = {
-	"Processed vendor"
-	"vendors",
-	"vendor"
+	'vendors',
+	'vendor'
 }
 
 def process(message):
