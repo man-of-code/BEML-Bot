@@ -37,7 +37,8 @@ def receive_message():
                 	obj = message['message'].get('attachments')
                 	if obj.get('type') == 'text':
                 		response_sent_nontext = process(obj.get('payload'))
-                    send_message(recipient_id, response_sent_nontext)
+                	send_message(recipient_id, response_sent_nontext)
+
     return "Message Processed"
 
 def verify_fb_token(token_sent):
