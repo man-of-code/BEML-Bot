@@ -15,7 +15,7 @@ solutions = {
 	'confirm bid status' : 'Go to the main menu, and select the particular tender. Click the "Refresh button".',
 	'edit bid' : 'To edit, Click on the reponse number --> edit --> make desired changes --> and submit it again.',
 	'1 stage bid' : 'A single stage bidding provides full transparency, all the documents with Price to be submitted in a single Envelope',
-	'2 stage bid' : 'A double stage bidding provides price abstraction. Tenders are to be invited in 2 parys namely, 1) Technical bid 2) Price bid. Both bids are to be invited with same date of receipt, with the stipulation that the price bids will be opened only after the technical evaluation of the offers is done.',
+	'2 stage bid' : 'A double stage bidding provides price abstraction. Tenders are to be invited in 2 parts namely, 1) Technical bid 2) Price bid. Both bids are to be invited with same date of receipt, with the stipulation that the price bids will be opened only after the technical evaluation of the offers is done.',
 }
 
 greetings = {
