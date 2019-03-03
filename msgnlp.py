@@ -22,6 +22,10 @@ def process(message):
 
 		for key in queries:
 			if key == word:
+				if key == 'tenders':
+					return solutions['all tenders']
+				if key == 'tender':
+					return solutions['particular tender']
 				if key == 'not':
 					not_flag = 1
 				if key == 'working' :
