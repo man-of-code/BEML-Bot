@@ -37,7 +37,7 @@ def process(message):
 					bid_flag = 1
 				if key == 'submit':
 					submit_flag = 1
-				if key == 'confirmation':
+				if key == 'confirmation' or key == 'confirm':
 					confrm_flag = 1
 				if key == 'status':
 					status_flag = 1
