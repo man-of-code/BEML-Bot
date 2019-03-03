@@ -60,16 +60,16 @@ def process(message):
 			if key == word:
 				return solutions[key]
 
-		not_flag = False, working_flag = False
+		not_flag = 0, working_flag = 0
 
 		for key in queries:
 			if key == word:
 				if key == 'not':
-					not_flag = True
+					not_flag = 1
 				elif key == 'working' :
-					working_flag = True
+					working_flag = 1
 
-		if not_flag==True and working_flag==True :
+		if not_flag == 1 and working_flag == 1 :
 			return solutions['working']
 
 		'''for key in vendor_list:
@@ -79,5 +79,5 @@ def process(message):
 		for key in tender_list:
 			if key == word:
 				return solutions['tender']'''
-				
+
 	return "Keyword not found!"
