@@ -7,7 +7,7 @@ solutions = {
 	'all tenders' : 'Clock on "Even" status, and then select CurrentRFx(leaving all the fields blank). Then click "Apply".' ,
 	'hi' : "Greeting from BEML SRM. How may I help you?",
 	'website' : 'Please visit https://bemlindia.in',
-	'beml' : 'Bharat Earth Movers Limited, now known as BEML, is an Indian public sector undertaking, with headquarters in Bengaluru. It manufactures a variety of heavy equipment, such as that used for earth moving, transport and mining. Visit https://en.wikipedia.org/wiki/Bharat_Earth_Movers for more info',1
+	'beml' : 'Bharat Earth Movers Limited, now known as BEML, is an Indian public sector undertaking, with headquarters in Bengaluru. It manufactures a variety of heavy equipment, such as that used for earth moving, transport and mining. Visit https://en.wikipedia.org/wiki/Bharat_Earth_Movers for more info',
 	'ceo' : 'Shri D K Hota has assumed charge as Chairman & Managing Director with effect from 01.07.2016. He joined the Board of BEML Limited on 01.07.2013 as Director (Human Resources).',
 	'login' : 'Please visit https://bemlepci.bemlindia.in:50001/irj/portal. Insert correct credentials(User ID and Password)',
 	'working' : 'Restart the browser. The version should be 11 or above. All the pop-up blogs should be off and both the java should be enabled.'
