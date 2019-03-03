@@ -6,6 +6,13 @@ solutions = {
 	'tender' : 'recognized tender',
 }
 
+greetings = {
+	'Hello',
+	'hello',
+	'Hey',
+	'hey'
+}
+
 vendor_list = {
 	'vendor',
 	'Vendor',
@@ -25,6 +32,9 @@ def process(message):
 	keywords = word_tokenize(message)
 	print(keywords)
 	for word in keywords:
+		for key in greetings:
+			if key == word:
+				return "Greeting from BEML SRM. How may I help you?"
 		for key in vendor_list:
 			if key == word:
 				return solutions['vendor']
