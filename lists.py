@@ -4,7 +4,7 @@ solutions = {
 	'browser' : 'Always use Internet Explorer and run as administrator.',
 	'vendor' : 'recognized vendor',
 	'particular tender' : 'After logging in, wait till all the tenders are loaded. Then, click on the desired tender and proceed according to the tutorial website www.xyz.com.',
-	'all tenders' : 'Click on "Even" status, and then select CurrentRFx(leaving all the fields blank). Then click "Apply".' ,
+	'all tenders' : 'Click on "Event" status, and then select CurrentRFx(leaving all the fields blank). Then click "Apply".' ,
 	'hi' : "Greeting from BEML SRM. How may I help you?",
 	'website' : 'Please visit https://bemlindia.in',
 	'beml' : 'Bharat Earth Movers Limited, now known as BEML, is an Indian public sector undertaking, with headquarters in Bengaluru. It manufactures a variety of heavy equipment, such as that used for earth moving, transport and mining. Visit https://en.wikipedia.org/wiki/Bharat_Earth_Movers for more info',
@@ -40,6 +40,7 @@ queries = {
 	'submit',
 	'bid',
 	'confirmation',
+	'confirm',
 	'status',
 	'edit'
 }
