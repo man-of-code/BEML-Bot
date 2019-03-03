@@ -29,18 +29,18 @@ def process(message):
 			if key == word:
 				if key in solutions.keys():
 					return solutions[key]
+				if key == 'tenders':
+					return solutions['all tenders']
+				if key == 'tender':
+					return solutions['particular tender']
 				if key == 'bid':
 					bid_flag = 1
 				if key == 'submit':
 					submit_flag = 1
-				if key == 'tenders':
-					return solutions['all tenders']
 				if key == 'confirmation':
-					return confrm_flag = 1
+					confrm_flag = 1
 				if key == 'status':
-					return status_flag = 1
-				if key == 'tender':
-					return solutions['particular tender']
+					status_flag = 1
 				if key == 'not':
 					not_flag = 1
 				if key == 'working' :
