@@ -29,15 +29,9 @@ def receive_message():
                     #Facebook Messenger ID for user so we know where to send response back to
                     recipient_id = message['sender']['id']
                     if message['message'].get('text'):
-                        response_sent_text, image_flag = process(message['message'].get('text'))
+                        response_sent_text = process(message['message'].get('text'))
                         #response_sent_text = "Hello User!!"
                         send_message(recipient_id, response_sent_text)
-                        if image_flag == 1:
-                                image_url = 'https://www.bemlindia.in/images/logo_beml1.png'
-                                send_message(recipient_id, request.get(image_url).content)
-                        if image_flag == 2:
-                                image_url = 'https://www.bemlindia.in/images/hota.jpg'
-                                send_message(recipient_id, request.get(image_url).content)
                     #if user sends us a GIF, photo,video, or any other non-text item
                     '''if message['message'].get('attachments'):
                     	response_sent_nontext = "Invalid input"
