@@ -2,6 +2,7 @@ import os, sys
 from flask import Flask, request
 from pymessenger.bot import Bot
 from msgnlp import process
+from logger import log
 
 app = Flask(__name__)
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
@@ -53,7 +54,3 @@ def send_message(recipient_id, response):
     #sends user the text message provided via input response parameter
     bot.send_text_message(recipient_id, response)
     return "Success"
-
-def log(message):  # simple wrapper for logging to stdout on heroku
-    print(str(message))
-    sys.stdout.flush()

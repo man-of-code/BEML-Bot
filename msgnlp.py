@@ -26,8 +26,8 @@ def process(message):
 	for word in keywords:
 		for key in vendor_list:
 			if key == word:
-				return solutions[vendor_list[0]]
+				return solutions['vendor']
 		for key in tender_list:
 			if key == word:
-				return solution[tender_list[0]]
+				return solution['tender']
 	return "Keyword not found!"
