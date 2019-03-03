@@ -51,25 +51,33 @@ def process(message):
 	keywords = word_tokenize(message)
 	print(keywords)
 	for word in keywords:
+
 		for key in greetings:
 			if key == word:
 				return solutions['hi']
+
 		for key in dependencies:
 			if key == word:
 				return solutions[key]
+
 		not_flag = False, working_flag = False
+
 		for key in queries:
 			if key == word:
-				if key=='not'
+				if key == 'not':
 					not_flag = True
-				elif key=='working'
+				elif key == 'working' :
 					working_flag = True
-		if not_flag==True and working_flag==True
+
+		if not_flag==True and working_flag==True :
 			return solutions['working']
+
 		'''for key in vendor_list:
 			if key == word:
 				return solutions['vendor']
+
 		for key in tender_list:
 			if key == word:
 				return solutions['tender']'''
+				
 	return "Keyword not found!"
