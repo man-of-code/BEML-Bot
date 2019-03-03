@@ -34,10 +34,10 @@ def receive_message():
                         send_message(recipient_id, response_sent_text)
                         if image_flag == 1:
                                 image_url = 'https://www.bemlindia.in/images/logo_beml1.png'
-                                send_message(recipient_id, requests.get(image_url).content)
+                                send_message(recipient_id, request.get(image_url).content)
                         if image_flag == 2:
                                 image_url = 'https://www.bemlindia.in/images/hota.jpg'
-                                send_message(recipient_id, requests.get(image_url).content)
+                                send_message(recipient_id, request.get(image_url).content)
                     #if user sends us a GIF, photo,video, or any other non-text item
                     '''if message['message'].get('attachments'):
                     	response_sent_nontext = "Invalid input"
