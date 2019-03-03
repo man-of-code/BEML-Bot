@@ -2,9 +2,9 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 solutions = {
-	'java' : 'Please visit https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html . Recommended specification is 32bit'
-	'microsoft' : 'Please visit https://www.microsoft.com/en-in/download/details.aspx?id=5555 . '
-	'browser' : 'Always use Internet Explorer and run as administrator.'
+	'java' : 'Please visit https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html . Recommended specification is 32bit',
+	'microsoft' : 'Please visit https://www.microsoft.com/en-in/download/details.aspx?id=5555 . ',
+	'browser' : 'Always use Internet Explorer and run as administrator.',
 	'vendor' : 'recognized vendor',
 	'tender' : 'recognized tender',
 	'working' : 'Restart the browser. The version should be 11 or above. All the pop-up blog should be off and both the java should be enabled.'
