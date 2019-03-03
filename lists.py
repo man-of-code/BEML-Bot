@@ -2,7 +2,6 @@ solutions = {
 	'java8' : 'Please visit https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html . Specification must be 32bit',
 	'microsoft' : 'Please visit https://www.microsoft.com/en-in/download/details.aspx?id=5555 . ',
 	'browser' : 'Always use Internet Explorer and run as administrator.',
-	'vendor' : 'recognized vendor',
 	'particular tender' : 'After logging in, wait till all the tenders are loaded. Then, click on the desired tender and proceed according to the tutorial website www.xyz.com.',
 	'all tenders' : 'Click on "Event" status, and then select CurrentRFx(leaving all the fields blank). Then click "Apply".' ,
 	'hi' : "Greeting from BEML SRM. I am SRMBot, here to clarify your queries. How may I help you?",
