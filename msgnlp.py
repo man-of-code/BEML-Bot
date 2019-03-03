@@ -30,5 +30,5 @@ def process(message):
 				return solutions['vendor']
 		for key in tender_list:
 			if key == word:
-				return solution['tender']
+				return solutions['tender']
 	return "Keyword not found!"
