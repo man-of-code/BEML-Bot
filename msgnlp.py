@@ -60,7 +60,8 @@ def process(message):
 			if key == word:
 				return solutions[key]
 
-		not_flag = 0, working_flag = 0
+		not_flag = 0 
+		working_flag = 0
 
 		for key in queries:
 			if key == word:
