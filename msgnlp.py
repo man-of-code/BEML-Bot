@@ -73,11 +73,13 @@ def process(message):
 		if bid_flag == 1 and confrm_flag == 1 and status_flag == 1:
 			return solutions['confirm bid status']
 
-		if bid_flag == 1 and one_flag == 1:
-			return solutions['1 stage bid']
-
-		if bid_flag == 1 and two_flag == 1:
-			return solutions['2 stage bid']
+		if bid_flag == 1:
+			if one_flag == 1:
+				return solutions['1 stage bid']
+			elif two_flag == 1:
+				return solutions['2 stage bid']
+			else:
+				return "What type of bid, 2 stage or 1 stage?"
 
 		if bid_flag == 1 and edit_flag == 1:
 			return solutions['edit bid']
