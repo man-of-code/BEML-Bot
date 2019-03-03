@@ -38,6 +38,7 @@ queries = {
 	'tender',
 	'tenders',
 	'submit',
+	'submitted',
 	'bid',
 	'confirmation',
 	'confirm',

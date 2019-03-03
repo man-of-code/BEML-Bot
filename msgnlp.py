@@ -35,7 +35,7 @@ def process(message):
 					return solutions['particular tender']
 				if key == 'bid':
 					bid_flag = 1
-				if key == 'submit':
+				if key == 'submit' or key == 'submitted':
 					submit_flag = 1
 				if key == 'confirmation' or key == 'confirm':
 					confrm_flag = 1
