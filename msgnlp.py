@@ -53,7 +53,7 @@ def process(message):
 				if key == '1' or key == 'one' or key == 'single':
 					one_flag = 1
 				if key == '2' or key == 'two' or key == 'double':
-					two_flag = 2
+					two_flag = 1
 
 		if not_flag == 1 and working_flag == 1 :
 			return solutions['working']
@@ -67,7 +67,7 @@ def process(message):
 		if bid_flag == 1 and one_flag == 1:
 			return solutions['1 stage bid']
 
-		if bid_flag == 1 and two_flag == 2:
+		if bid_flag == 1 and two_flag == 1:
 			return solutions['2 stage bid']
 
 		if bid_flag == 1 and edit_flag == 1:
