@@ -1,4 +1,4 @@
 
-# BEML Chat bot for SIH 2019
+# BEML Chat bot
 ## Python 3.7
 
