@@ -7,6 +7,7 @@ solutions = {
 	'browser' : 'Always use Internet Explorer and run as administrator.',
 	'vendor' : 'recognized vendor',
 	'tender' : 'recognized tender',
+	'hi' : "Greeting from BEML SRM. How may I help you?"
 	'working' : 'Restart the browser. The version should be 11 or above. All the pop-up blog should be off and both the java should be enabled.'
 }
 
