@@ -66,7 +66,7 @@ def process(message):
 					not_flag = 1
 				if key == 'working' :
 					working_flag = 1
-				else
+				else :
 					return solutions[key]
 
 		if not_flag == 1 and working_flag == 1 :
