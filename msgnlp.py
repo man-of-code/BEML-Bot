@@ -12,18 +12,13 @@ solutions = {
 }
 
 greetings = {
-	'Hello',
 	'hello',
-	'Hey',
 	'hey',
-	'Hi',
 	'hi'
 }
 
 dependencies = {
-	'Java8',
 	'java8',
-	'visual',
 	'microsoft',
 	'browser'
 }
@@ -35,20 +30,15 @@ queries = {
 
 '''vendor_list = {
 	'vendor',
-	'Vendor',
-	'vendors',
-	'Vendors'
+	'vendors'
 }
 
 tender_list = {
 	'tender',
-	'Tender',
-	'tenders',
-	'Tenders'
+	'tenders'
 }'''
 
 def process(message):
-	nltk.download('punkt')
 	keywords = word_tokenize(message)
 	print(keywords)
 	for word in keywords:
