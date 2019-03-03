@@ -30,20 +30,17 @@ dependencies = {
 
 queries = {
 	'not',
-	'working',
-	'website',
+	'working', 'work', 'worked'
+	'website', 'webpage'
 	'login',
 	'beml',
 	'ceo',
-	'tender',
-	'tenders',
-	'submit',
-	'submitted',
+	'tender', 'tenders',
+	'submit', 'submitted', 'submitting'
 	'bid',
-	'confirmation',
-	'confirm',
+	'confirmation', 'confirm', 'confirmed'
 	'status',
-	'edit'
+	'edit', 'change'
 }
 
 '''vendor_list = {

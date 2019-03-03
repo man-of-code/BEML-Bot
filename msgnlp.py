@@ -4,7 +4,6 @@ from lists import solutions, queries, dependencies, greetings
 
 def process(message):
 	keywords = word_tokenize(message)
-	print(keywords)
 
 	not_flag = 0 
 	working_flag = 0
@@ -13,9 +12,11 @@ def process(message):
 	confrm_flag = 0
 	status_flag = 0
 	edit_flag = 0
+	one_flag = 0
+	two_flag = 0
 
 	for word in keywords:
-		word = word.lower()
+		word = word.lower() #convert to lowercase
 
 		for key in greetings:
 			if key == word:
@@ -29,24 +30,30 @@ def process(message):
 			if key == word:
 				if key in solutions.keys():
 					return solutions[key]
+				if key == 'webpage' or key == 'website':
+					return solutions['website']
 				if key == 'tenders':
 					return solutions['all tenders']
 				if key == 'tender':
 					return solutions['particular tender']
-				if key == 'bid':
+				if key == 'bid' or key == 'bidding':
 					bid_flag = 1
-				if key == 'submit' or key == 'submitted':
+				if key == 'submit' or key == 'submitted' or key == 'submitting':
 					submit_flag = 1
-				if key == 'confirmation' or key == 'confirm':
+				if key == 'confirmation' or key == 'confirm' or key == 'confirmed':
 					confrm_flag = 1
 				if key == 'status':
 					status_flag = 1
 				if key == 'not':
 					not_flag = 1
-				if key == 'working' :
+				if key == 'working' or key == 'worked' or key == 'work':
 					working_flag = 1
-				if key == 'edit':
+				if key == 'edit' or key == 'change':
 					edit_flag = 1
+				if key == '1' or key == 'one' or key == 'single':
+					one_flag = 1
+				if key == '2' or key == 'two' or key == 'double':
+					two_flag = 2
 
 		if not_flag == 1 and working_flag == 1 :
 			return solutions['working']
@@ -56,6 +63,12 @@ def process(message):
 
 		if bid_flag == 1 and confrm_flag == 1 and status_flag == 1:
 			return solutions['confirm bid status']
+
+		if bid_flag == 1 and one_flag == 1:
+			return solutions['1 stage bid']
+
+		if bid_flag == 1 and two_flag == 2:
+			return solutions['2 stage bid']
 
 		if bid_flag == 1 and edit_flag == 1:
 			return solutions['edit bid']
