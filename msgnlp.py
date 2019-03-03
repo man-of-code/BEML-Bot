@@ -1,10 +1,23 @@
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 
-#1
+solutions = {
+	'vendor' : 'recognized vendor',
+	'tender' : 'recognized tender',
+}
+
 vendor_list = {
-	'vendors',
 	'vendor'
+	'Vendor',
+	'vendors',
+	'Vendors'
+}
+
+tender_list = {
+	'tender',
+	'Tender',
+	'tenders',
+	'Tenders'
 }
 
 def process(message):
@@ -14,5 +27,8 @@ def process(message):
 	for word in keywords:
 		for key in vendor_list:
 			if key == word:
-				return key
+				return solutions[vendor_list[0]]
+		for key in tender_list:
+			if key == word:
+				return solution[tender_list[0]]
 	return "Keyword not found!"
