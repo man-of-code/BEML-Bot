@@ -7,7 +7,7 @@ solutions = {
 }
 
 vendor_list = {
-	'vendor'
+	'vendor',
 	'Vendor',
 	'vendors',
 	'Vendors'
@@ -21,7 +21,6 @@ tender_list = {
 }
 
 def process(message):
-	nltk.download('punkt')
 	keywords = word_tokenize(message)
 	print(keywords)
 	for word in keywords:
