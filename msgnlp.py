@@ -9,7 +9,7 @@ solutions = {
 	'tender' : 'recognized tender',
 	'hi' : "Greeting from BEML SRM. How may I help you?",
 	'website' : 'Please visit https://bemlindia.in',
-	'login' : 'Please visit https://bemlepci.bemlindia.in:50001/irj/portal. Insert correct credentials(User ID and Password)'
+	'login' : 'Please visit https://bemlepci.bemlindia.in:50001/irj/portal. Insert correct credentials(User ID and Password)',
 	'working' : 'Restart the browser. The version should be 11 or above. All the pop-up blog should be off and both the java should be enabled.'
 }
 
