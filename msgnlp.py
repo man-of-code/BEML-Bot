@@ -14,6 +14,9 @@ def process(message):
 	edit_flag = 0
 	one_flag = 0
 	two_flag = 0
+	price_flag = 0
+	attachment_flag = 0
+	technical_flag = 0
 
 	for word in keywords:
 		word = word.lower() #convert to lowercase
@@ -54,6 +57,12 @@ def process(message):
 					one_flag = 1
 				if key == '2' or key == 'two' or key == 'double':
 					two_flag = 1
+				if key == 'attachment' or key == 'attach':
+					attachment_flag = 1
+				if key == 'price' or key == 'cost':
+					price_flag = 1
+				if key == 'technical' or key == 'technological':
+					technical_flag = 1
 
 		if not_flag == 1 and working_flag == 1 :
 			return solutions['working']
@@ -72,6 +81,14 @@ def process(message):
 
 		if bid_flag == 1 and edit_flag == 1:
 			return solutions['edit bid']
+
+		if attachment_flag == 1 :
+			if price_flag == 1:
+				return solutions['price attachment']
+			elif technical_flag == 1:
+				return solutions['technical attachment']
+			else:
+				return 'What type of attachment, price of technical?'
 
 		'''for key in vendor_list:
 			if key == word:

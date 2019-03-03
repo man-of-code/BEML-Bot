@@ -14,6 +14,8 @@ solutions = {
 	'submit bid' : 'Fill the complete details of the particular bid. Now check --> save --> Digital signature will open, Java prompt will run. Now, select --> Encrypt bid --> Edit --> Decrypt bid --> Enter PIN for digital signature and click submit. Select appropriate token from Digital Signature prompt and then Enter the PIN. Confirm the action and then click Encrypt bid.',
 	'confirm bid status' : 'Go to the main menu, and select the particular tender. Click the "Refresh button".',
 	'edit bid' : 'To edit, Click on the reponse number --> edit --> make desired changes --> and submit it again.',
+	'technical attachment' : 'A technical attachment is technical description of the bid. To add, Click on "C-Folder Technical Attachments" --> Add Attachment --> Browse( Select you file, the size should be less than 5MB, and there are no limitations on the extension of the file.',
+	'price attachment' : 'A price attachment gives the price details of the bid. To add, Click on "Notes and Price Attachment --> "Add Attachment"',
 	'1 stage bid' : 'A single stage bidding provides full transparency, all the documents with Price to be submitted in a single Envelope',
 	'2 stage bid' : 'A double stage bidding provides price abstraction. Tenders are to be invited in 2 parts namely, 1) Technical bid 2) Price bid. Both bids are to be invited with same date of receipt, with the stipulation that the price bids will be opened only after the technical evaluation of the offers is done.',
 }
@@ -44,7 +46,10 @@ queries = {
 	'status',
 	'edit', 'change',
 	'1', 'one', 'single',
-	'2', 'two', 'double'
+	'2', 'two', 'double',
+	'price', 'cost', 
+	'technical', 'technological',
+	'attachment', 'attach'
 }
 
 '''vendor_list = {
