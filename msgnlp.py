@@ -2,7 +2,7 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 solutions = {
-	'java8' : 'Please visit https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html . Recommended specification is 32bit',
+	'java8' : 'Please visit https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html . Specification must be 32bit',
 	'microsoft' : 'Please visit https://www.microsoft.com/en-in/download/details.aspx?id=5555 . ',
 	'browser' : 'Always use Internet Explorer and run as administrator.',
 	'vendor' : 'recognized vendor',
@@ -41,6 +41,10 @@ tender_list = {
 def process(message):
 	keywords = word_tokenize(message)
 	print(keywords)
+
+	not_flag = 0 
+	working_flag = 0
+
 	for word in keywords:
 		word = word.lower()
 
@@ -52,14 +56,11 @@ def process(message):
 			if key == word:
 				return solutions[key]
 
-		not_flag = 0 
-		working_flag = 0
-
 		for key in queries:
 			if key == word:
 				if key == 'not':
 					not_flag = 1
-				elif key == 'working' :
+				if key == 'working' :
 					working_flag = 1
 
 		if not_flag == 1 and working_flag == 1 :
