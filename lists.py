@@ -13,7 +13,7 @@ solutions = {
 	'working' : 'Restart the browser. The version should be 11 or above. All the pop-up blogs should be off and both the java should be enabled.',
 	'submit bid' : 'Fill the complete details of the particular bid. Now check --> save --> Digital signature will open, Java prompt will run. Now, select --> Encrypt bid --> Edit --> Decrypt bid --> Enter PIN for digital signature and click submit. Select appropriate token from Digital Signature prompt and then Enter the PIN. Confirm the action and then click Encrypt bid.',
 	'confirm bid status' : 'Go to the main menu, and select the particular tender. Click the "Refresh button".',
-	'edit bid' = 'To edit, Click on the reponse number --> edit --> make desired changes --> and submit it again.'
+	'edit bid' : 'To edit, Click on the reponse number --> edit --> make desired changes --> and submit it again.'
 }
 
 greetings = {
