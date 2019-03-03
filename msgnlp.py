@@ -42,6 +42,7 @@ def process(message):
 	keywords = word_tokenize(message)
 	print(keywords)
 	for word in keywords:
+		word = word.lower()
 
 		for key in greetings:
 			if key == word:
