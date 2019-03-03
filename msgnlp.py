@@ -2,18 +2,37 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 solutions = {
+	'java' : 'Please visit https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html . Recommended specification is 32bit'
+	'microsoft' : 'Please visit https://www.microsoft.com/en-in/download/details.aspx?id=5555 . '
+	'browser' : 'Always use Internet Explorer and run as administrator.'
 	'vendor' : 'recognized vendor',
 	'tender' : 'recognized tender',
+	'working' : 'Restart the browser. The version should be 11 or above. All the pop-up blog should be off and both the java should be enabled.'
 }
 
 greetings = {
 	'Hello',
 	'hello',
 	'Hey',
-	'hey'
+	'hey',
+	'Hi',
+	'hi'
 }
 
-vendor_list = {
+dependencies = {
+	'Java',
+	'java',
+	'visual',
+	'microsoft',
+	'browser'
+}
+
+queries = {
+	'not',
+	'working'
+}
+
+'''vendor_list = {
 	'vendor',
 	'Vendor',
 	'vendors',
@@ -25,7 +44,7 @@ tender_list = {
 	'Tender',
 	'tenders',
 	'Tenders'
-}
+}'''
 
 def process(message):
 	nltk.download('punkt')
@@ -34,11 +53,23 @@ def process(message):
 	for word in keywords:
 		for key in greetings:
 			if key == word:
-				return "Greeting from BEML SRM. How may I help you?"
-		for key in vendor_list:
+				return solutions['hi']
+		for key in dependencies:
+			if key == word:
+				return solutions[key]
+		not_flag = False, working_flag = False
+		for key in queries:
+			if key == word:
+				if key=='not'
+					not_flag = True
+				elif key=='working'
+					working_flag = True
+		if not_flag==True and working_flag==True
+			return solutions['working']
+		'''for key in vendor_list:
 			if key == word:
 				return solutions['vendor']
 		for key in tender_list:
 			if key == word:
-				return solutions['tender']
+				return solutions['tender']'''
 	return "Keyword not found!"
