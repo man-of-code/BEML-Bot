@@ -1,6 +1,6 @@
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
-from src.lists import solutions, queries, dependencies, greetings
+from lists import solutions, queries, dependencies, greetings
 
 def process(message):
 	keywords = word_tokenize(message)

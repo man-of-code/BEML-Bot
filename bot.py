@@ -1,8 +1,8 @@
 import os, sys
 from flask import Flask, request
 from pymessenger.bot import Bot
-from src.msgnlp import process
-from src.logger import log
+from msgnlp import process
+from logger import log
 
 app = Flask(__name__)
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
